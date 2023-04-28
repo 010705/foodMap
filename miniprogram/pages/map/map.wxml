@@ -1,0 +1,10 @@
+<!--pages/map/map.wxml-->
+<map id="mapId" scale="{{defaultScale}}" longitude='{{nowlongitude}}' latitude='{{nowlatitude}}'
+   markers="{{stores}}" subkey="{{mapSubKey}}" show-compass="{{true}}"  polyline="{{polyline}}"
+  show-location="{{true}}" bindmarkertap="onMarkerTap" scale="16">
+  <!-- 上方的添加提醒 -->
+    <!-- 定位 -->
+    <cover-view class="getLocation" bindtap="getCenterLocation">
+      <cover-image src="../../images/locator.png"></cover-image>
+    </cover-view>
+</map>

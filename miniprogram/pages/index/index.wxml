@@ -1,0 +1,13 @@
+<!--pages/index/index.wxml-->
+<topSearch></topSearch>
+<map id="mapId" scale="{{defaultScale}}" longitude='{{longitude}}' latitude='{{latitude}}'
+  style='height:{{windowHeight}}px' markers="{{stores}}" subkey="{{mapSubKey}}" show-compass="{{true}}"
+  show-location="{{true}}" bindmarkertap="onMarkerTap">
+  <!-- 上方的添加提醒 -->
+    <!-- 定位 -->
+    <cover-view class="getLocation" bindtap="getCenterLocation">
+      <cover-image src="../../images/locator.png"></cover-image>
+    </cover-view>
+</map>
+
+

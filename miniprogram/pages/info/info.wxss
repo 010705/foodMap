@@ -1,0 +1,62 @@
+/* pages/info/info.wxss */
+.mybody{
+  position: relative;
+  height: 100vh;
+}
+swiper{
+  height: 200px;
+  width: 100%;
+}
+swiper-item{
+  width: 100%;
+  height: 100%;
+}
+.img{
+  width: 100%;
+ object-fit: cover;
+}
+.info{
+  margin-top: 10px;
+  padding: 10px;
+}
+.title{
+  font-size: 18px;
+  font-weight: bold;
+  color:black;
+}
+.note{
+  font-size: 16px;
+  margin-top: 10px;
+}
+.tag{
+  color: #409EFF;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.card{
+  position: absolute;
+  bottom: 0;
+  background-color: #ddd;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  /* padding: 10px; */
+  align-items: center;
+}
+.address{
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow:ellipsis;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.navi{
+  width: 70px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  background-color: #f5b634;
+  font-size: 13px;
+  margin-right: 10px;
+}

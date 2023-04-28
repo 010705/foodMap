@@ -1,0 +1,5 @@
+<!--components/TopSearch/TopSearch.wxml-->
+<view class='searchItem'>
+  <input class="weui-input"  placeholder="请输入要搜索的关键词" 	bindconfirm="search" model:value="{{inputValue}}"/>
+  <button class="btn" catchtap="search">搜索</button>
+</view>

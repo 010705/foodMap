@@ -1,0 +1,17 @@
+<!--pages/search/search.wxml-->
+<topSearchInput></topSearchInput>
+<view class="main">
+  <view wx:if="{{!exist}}">
+    <view class="nothing"> 暂无数据</view>
+  </view>
+  <view wx:else>
+    <view wx:for="{{stores}}" wx:key="id">
+      <navigator url="../info/info?id={{item._id}}">
+        <view class="list">
+          <view class="title"> {{item.title}}</view>
+          <view class="address">{{item.address}}</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

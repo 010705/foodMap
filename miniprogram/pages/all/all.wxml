@@ -1,0 +1,22 @@
+<!--pages/all/all.wxml-->
+<search></search>
+<view class="main">
+  <view wx:if="{{!exist}}">
+    <view class="nothing"> 暂无数据</view>
+  </view>
+  <view wx:else>
+    <view wx:for="{{stores}}" wx:key="id">
+      <navigator url="../info/info?id={{item._id}}">
+        <view class="content">
+          <view class="icon">
+            <image src="{{item.iconPath}}" class="icon"></image>
+          </view>
+          <view class="list">
+            <view class="title"> {{item.title}}</view>
+            <view class="address">{{item.address}}</view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

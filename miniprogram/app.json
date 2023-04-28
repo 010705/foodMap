@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/add/add",
+    "pages/all/all",
+    "pages/search/search",
+    "pages/info/info",
+    "pages/map/map"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "美食地图",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "f5b634",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./images/home (1).png",
+        "selectedIconPath": "./images/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/all/all",
+        "iconPath": "./images/allfood(1).png",
+        "selectedIconPath": "./images/allfood.png",
+        "text": "全部美食"
+      },
+
+      {
+        "pagePath": "pages/add/add",
+        "iconPath": "./images/mark (1).png",
+        "selectedIconPath": "./images/mark.png",
+        "text": "添加标记"
+      }
+    ]
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseLocation"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于添加新的店铺"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

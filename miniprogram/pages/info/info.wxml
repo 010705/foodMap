@@ -1,0 +1,19 @@
+<!--pages/info/info.wxml-->
+<view class="mybody" >
+  <swiper autoplay="true" 	interval="3000" 	indicator-dots="true">
+    <block wx:for="{{imgList}}" wx:key="index">
+      <swiper-item>
+       <image src="{{item}}" class="img"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="info">
+    <view class="title">{{info.title}}</view>
+    <view class="note">{{info.notes}}</view>
+    <text class="tag" wx:for="{{keywords}}">#{{item}}</text>
+  </view>
+  <view class="card">
+    <view class="address">  地址：{{info.address}}</view>
+    <button class="navi" bindtap="gohere" data-info="{{info}}">导航</button>
+  </view>
+</view>

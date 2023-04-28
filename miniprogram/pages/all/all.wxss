@@ -1,0 +1,28 @@
+/* pages/all/all.wxss */
+.main{
+  margin-top: 20px;
+}
+.nothing{
+  text-align: center;
+}
+.content{
+  display: flex;
+  border: 1px solid #ddd;
+  align-items: center;
+  padding: 8px;
+}
+.icon{
+  width: 20px;
+  height: 20px;
+}
+.list{
+  margin-left: 20px;
+}
+.title{
+  font-size: 16px;
+  font-weight: bold;
+}
+.address{
+  font-size: 14px;
+  margin-top: 10px;
+}

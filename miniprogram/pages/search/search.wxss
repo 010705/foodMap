@@ -1,0 +1,19 @@
+/* pages/search/search.wxss */
+.main{
+  margin-top: 20px;
+}
+.nothing{
+  text-align: center;
+}
+.list{
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+.title{
+  font-size: 16px;
+  font-weight: bold;
+}
+.address{
+  font-size: 14px;
+  margin-top: 10px;
+}

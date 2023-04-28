@@ -1,0 +1,24 @@
+/* components/TopSearch/TopSearch.wxss */
+.searchItem{
+  height: 35px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+.weui-input{
+  height: 30px;
+  border-radius: 20px;
+  padding: 0 20px;
+  flex: 1;
+}
+.btn:not([size='mini']){
+  height: 25px;
+  width: 40px;
+  border-radius:20px;
+  margin-right: 5px;
+  background-color:#f5b634;
+  font-size: 12px;
+  text-align: center;
+  padding: 0;
+}

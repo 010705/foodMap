@@ -1,0 +1,14 @@
+map{
+  width: 750rpx;
+  position: relative;
+}
+.getLocation {
+  position: absolute;
+  left: 12px;
+  bottom: 120px;
+  text-align: center;
+  width: 20px;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 1px 2px 3px #999999;
+}

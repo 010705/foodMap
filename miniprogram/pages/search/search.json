@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "topSearchInput":"../../components/TopSearch/TopSearch"
+  }
+}

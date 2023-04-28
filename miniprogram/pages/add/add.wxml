@@ -1,0 +1,31 @@
+<!--pages/add/add.wxml-->
+<form report-submit='true' onsubmit="createItem" class="form">
+  <view class='desc'>地址</view>
+  <view class="loaction">
+    <button bindtap='chooseLocation' class="changeLocal" type="primary">地图选址</button>
+  </view>
+  <view class='desc'>店铺名称</view>
+  <input placeholder='请输入店铺的名称' name="title" value='{{name}}'></input>
+  <view class='desc'>详细地址</view>
+  <input placeholder='请输入详细地址' name="address" value='{{address}}'></input>
+  <view class='desc'>人均价格</view>
+  <input placeholder='单位是元～' name="price_per" type="number" value='{{price_per}}'></input>
+  <view class='desc'>关键词设定</view>
+  <input placeholder='比如，上下九步行街，太古汇，家附近' name="keywords" value='{{price_per}}'></input>
+  <view class='desc'>个人点评</view>
+  <textarea placeholder='你为大家推荐什么菜呢？' name="notes" value="{{notes}}"></textarea>
+  <view class='desc'>评分（10分制）</view>
+  <slider min="1" max="10" show-value name="star" value="5"></slider>
+  <view class='desc'>美食照片</view>
+  <button bindtap='uploadImage' class="changeImg" type="primary">点我选择照片</button>
+  <view class="imgList">
+    <view wx:for="{{imgUrl}}" wx:key="index">
+      <image src="{{item}}" class="img"></image>
+    </view>
+  </view>
+  <!-- <view class="imgList" wx:if="{{imgList.length!==0}}" wx:for="{{imgList}}" >
+    <cover-image src="item.tempFilePath"></cover-image>
+    <view>{{item.tempFilePath}}</view>
+  </view> -->
+  <button class='submit' type="primary" form-type='submit'>添加</button>
+</form>

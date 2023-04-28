@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@vant/weapp": "^1.10.16",
+    "vant": "^4.2.0"
+  }
+}

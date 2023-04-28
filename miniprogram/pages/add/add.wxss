@@ -1,0 +1,50 @@
+/* pages/add/add.wxss */
+.form{
+  padding: 10px;
+  background-color: #ddd;
+}
+.desc{
+  font-size: 16px;
+  font-weight: bold;
+}
+.loaction{
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.changeLocal{
+  padding: 0;
+  /* padding:7px 0; */
+  height: 40px;
+  width: 80px !important;
+  font-weight: normal;
+  text-align: center;
+}
+input{
+  height: 50px;
+}
+textarea{
+  margin-top: 10px;
+}
+.changeImg{
+  width: 120px !important;
+  height: 40px;
+  padding: 0;
+  font-weight: normal;
+  margin: 20px 0;
+}
+.submit{
+  width: 100% !important;
+}
+.imgList{
+  display: flex;
+  flex-wrap: wrap;
+}
+.img{
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
